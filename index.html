@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tôi Tài Giỏi, Bạn Cũng Thế! - Adam Khoo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        heading: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0284c7',
+                            darkBlue: '#1e3a8a',
+                            navy: '#0f172a',
+                            accent: '#2563eb',
+                            gold: '#d97706',
+                            goldLight: '#fef3c7',
+                            bgLight: '#f8fafc'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 5s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-16px) rotate(1.5deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Stroke typography effect for light background */
+        .text-stroke-light {
+            -webkit-text-stroke: 2px rgba(30, 58, 138, 0.08);
+            color: transparent;
+        }
+        .text-stroke-gold {
+            -webkit-text-stroke: 1.5px rgba(217, 119, 6, 0.2);
+            color: transparent;
+        }
+        .shadow-soft {
+            box-shadow: 0 20px 40px -15px rgba(14, 165, 233, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-sky-200 selection:text-brand-navy">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center text-white font-extrabold text-xl shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    T
+                </div>
+                <span class="font-heading font-bold text-lg sm:text-xl tracking-tight text-brand-navy">
+                    TÔI TÀI GIỎI, <span class="text-sky-600">BẠN CŨNG THẾ!</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#loi-gioi-thieu" class="hover:text-sky-600 transition-colors">Lời Giới Thiệu</a>
+                <a href="#phuong-phap" class="hover:text-sky-600 transition-colors">Phương Pháp</a>
+                <a href="#tac-gia" class="hover:text-sky-600 transition-colors">Tác Giả</a>
+                <a href="#cam-nhan" class="hover:text-sky-600 transition-colors">Cảm Nhận</a>
+            </nav>
+
+            <a href="#thong-diep" class="px-5 py-2.5 rounded-full bg-brand-darkBlue text-white font-semibold text-sm hover:bg-sky-600 hover:shadow-lg hover:shadow-sky-500/20 transition-all">
+                Thông Điệp
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO BANNER SECTION (White Theme with Reference Typography Style) -->
+    <section class="relative pt-28 pb-20 lg:pt-36 lg:pb-32 overflow-hidden bg-gradient-to-b from-sky-50/70 via-white to-slate-50">
+        
+        <!-- Large Background Typography chìm kiểu Banner mẫu -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center pointer-events-none select-none opacity-80 overflow-hidden">
+            <h1 class="font-heading text-[13vw] leading-none font-black text-stroke-light tracking-wider uppercase whitespace-nowrap">
+                TÔI TÀI GIỎI
+            </h1>
+            <h1 class="font-heading text-[11vw] leading-none font-black text-stroke-gold tracking-wider uppercase whitespace-nowrap -mt-6 sm:-mt-10">
+                BẠN CŨNG THẾ
+            </h1>
+        </div>
+
+        <!-- Decorative Light Glows -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-sky-200/40 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/2 right-10 w-[300px] h-[300px] bg-amber-100/60 rounded-full blur-[80px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left: Title & Quote Intro -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-sky-100 text-sky-800 text-xs font-bold tracking-wide">
+                        <i class="fa-solid fa-book-open text-sky-600"></i>
+                        <span>SÁCH MÔN HỌC & TƯ DUY PHÁT TRIỂN</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-brand-navy tracking-tight leading-tight">
+                        TÔI TÀI GIỎI, <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 via-blue-700 to-indigo-800">
+                            BẠN CŨNG THẾ!
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                        Mỗi người đều có khả năng học tập và phát triển, quan trọng là chúng ta cần có <span class="font-semibold text-brand-darkBlue bg-sky-100/80 px-1.5 py-0.5 rounded">phương pháp phù hợp</span> và <span class="font-semibold text-brand-darkBlue bg-amber-100/80 px-1.5 py-0.5 rounded">biết tin vào bản thân</span>.
+                    </p>
+
+                    <!-- Author Info Pill -->
+                    <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <div class="flex items-center space-x-3 bg-white px-4 py-2.5 rounded-xl border border-slate-200/80 shadow-sm">
+                            <i class="fa-solid fa-pen-nib text-amber-500"></i>
+                            <span class="text-xs text-slate-500">Tác giả: <strong class="text-slate-800">Adam Khoo</strong></span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-white px-4 py-2.5 rounded-xl border border-slate-200/80 shadow-sm">
+                            <i class="fa-solid fa-language text-sky-500"></i>
+                            <span class="text-xs text-slate-500">Dịch giả: <strong class="text-slate-800">Trần Đăng Khoa & Uông Xuân Vy</strong></span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#loi-gioi-thieu" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-sky-600 text-white font-bold text-sm shadow-lg shadow-sky-600/25 hover:bg-sky-700 hover:shadow-xl hover:-translate-y-0.5 transition-all text-center">
+                            Đọc Bài Giới Thiệu
+                        </a>
+                        <a href="#phuong-phap" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-100 text-slate-700 font-bold text-sm hover:bg-slate-200 transition-all text-center">
+                            Khám Phá Phương Pháp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Floating 3D Book Showcase -->
+                <div class="lg:col-span-5 flex flex-col items-center justify-center relative">
+                    <div class="relative group">
+                        <!-- Orbit Graphic Ring -->
+                        <div class="absolute -inset-4 sm:-inset-6 rounded-full border border-sky-200/60 border-dashed animate-spin-slow pointer-events-none"></div>
+                        
+                        <!-- Floating Book image -->
+                        <div class="relative z-10 animate-float">
+                            <img src="book.jpg" 
+                                 alt="Tôi Tài Giỏi, Bạn Cũng Thế - Adam Khoo" 
+                                 class="max-w-[270px] sm:max-w-[320px] h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-105">
+                        </div>
+
+                        <!-- Shadow effect -->
+                        <div class="w-2/3 h-6 bg-slate-300/60 mx-auto rounded-[100%] blur-md mt-4"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: LỜI MỞ ĐẦU & ĐẶT VẤN ĐỀ (Sát văn bản bài phát biểu) -->
+    <section id="loi-gioi-thieu" class="py-20 bg-white relative border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Opening speech greeting box -->
+            <div class="p-8 sm:p-10 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-sm relative overflow-hidden">
+                <div class="w-2 h-full bg-sky-500 absolute left-0 top-0"></div>
+                
+                <div class="flex items-center space-x-3 text-sky-700 font-bold text-sm uppercase tracking-wider mb-4">
+                    <i class="fa-solid fa-microphone-lines text-lg"></i>
+                    <span>Kính thưa thầy cô và các bạn!</span>
+                </div>
+
+                <p class="text-slate-700 text-base sm:text-lg leading-relaxed italic mb-6">
+                    "Hôm nay, em xin giới thiệu với mọi người một cuốn sách mà em cảm thấy rất thú vị và hữu ích, đó là **“Tôi Tài Giỏi, Bạn Cũng Thế!”** của tác giả **Adam Khoo**."
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-slate-200">
+                    <!-- Questions we ask ourselves -->
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200">
+                        <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center text-amber-600">
+                            <i class="fa-solid fa-circle-question mr-2"></i> Trăn trở thường gặp
+                        </h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Có lẽ trong chúng ta, ai cũng từng có lúc nghĩ rằng: <em class="text-slate-800 font-medium">“Mình không đủ thông minh”</em>, <em class="text-slate-800 font-medium">“Mình học môn này không giỏi”</em> hay <em class="text-slate-800 font-medium">“Mình không thể nhớ được nhiều kiến thức như các bạn khác”</em>.
+                        </p>
+                    </div>
+
+                    <!-- The answer from book -->
+                    <div class="bg-sky-50/80 p-5 rounded-2xl border border-sky-100">
+                        <h4 class="font-bold text-sky-900 text-sm mb-3 flex items-center">
+                            <i class="fa-solid fa-lightbulb text-sky-600 mr-2"></i> Góc nhìn mới từ cuốn sách
+                        </h4>
+                        <p class="text-xs text-sky-950 leading-relaxed">
+                            Liệu khả năng của mỗi người có thực sự bị giới hạn? Cuốn sách đưa ra câu trả lời: <strong>Mỗi người đều có khả năng học tập và phát triển</strong>, quan trọng là chúng ta cần có phương pháp phù hợp và biết tin vào bản thân.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 2: TÁC GIẢ ADAM KHOO -->
+    <section id="tac-gia" class="py-20 bg-slate-50/70 border-y border-slate-200/60">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-soft text-center max-w-sm w-full">
+                        <div class="w-24 h-24 rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-700 mx-auto flex items-center justify-center text-white text-4xl shadow-md mb-4">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Adam Khoo</h3>
+                        <p class="text-xs text-sky-600 font-semibold mt-1">Doanh nhân | Diễn giả | Tác giả Singapore</p>
+                        <p class="text-xs text-slate-500 mt-4 leading-relaxed bg-slate-50 p-3 rounded-xl">
+                            Từ một cậu bé từng bị xem là kém cỏi, ông đã vươn lên trở thành một trong những triệu phú trẻ nhất Singapore nhờ thay đổi phương pháp tư duy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-800 text-xs font-bold">
+                        VỀ TÁC GIẢ & TỔNG QUAN SÁCH
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-brand-navy">
+                        Học Hỏi Từ Kinh Nghiệm Thực Tế
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Tác giả Adam Khoo chia sẻ những kinh nghiệm và phương pháp học tập mà chính ông đã sử dụng để cải thiện khả năng của mình.
+                    </p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Cuốn sách không chỉ dừng lại ở việc học kiến thức trong sách giáo khoa, mà còn hướng dẫn chi tiết cách:
+                    </p>
+
+                    <!-- Key Topics Pills -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+                        <div class="p-3 bg-white rounded-xl border border-slate-200 text-center">
+                            <i class="fa-solid fa-bullseye text-sky-600 mb-1"></i>
+                            <div class="text-xs font-bold text-slate-800">Đặt Mục Tiêu</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-slate-200 text-center">
+                            <i class="fa-solid fa-clock text-amber-600 mb-1"></i>
+                            <div class="text-xs font-bold text-slate-800">Quản Lý Thời Gian</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-slate-200 text-center">
+                            <i class="fa-solid fa-brain text-purple-600 mb-1"></i>
+                            <div class="text-xs font-bold text-slate-800">Ghi Nhớ Thông Tin</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-slate-200 text-center">
+                            <i class="fa-solid fa-book-open text-emerald-600 mb-1"></i>
+                            <div class="text-xs font-bold text-slate-800">Đọc Sách Hiệu Quả</div>
+                        </div>
+                        <div class="p-3 bg-white rounded-xl border border-slate-200 text-center col-span-2 sm:col-span-1">
+                            <i class="fa-solid fa-shield-heart text-rose-600 mb-1"></i>
+                            <div class="text-xs font-bold text-slate-800">Xây Dựng Tự Tin</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PHƯƠNG PHÁP NỔI BẬT (3 Điểm ấn tượng nhất từ văn bản) -->
+    <section id="phuong-phap" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-sky-600">Nội dung ấn tượng nhất</span>
+                <h2 class="text-3xl font-extrabold font-heading text-brand-navy mt-1">3 Bài Học Cốt Lõi Trọng Tâm</h2>
+                <div class="w-16 h-1 bg-sky-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Lesson 1 -->
+                <div class="p-7 rounded-2xl bg-white border border-slate-200 shadow-soft hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">1. Ghi Nhớ Bằng Liên Tưởng & Hình Ảnh</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Thay vì cố gắng học thuộc một cách máy móc, chúng ta có thể biến những thông tin cần nhớ thành những hình ảnh hoặc câu chuyện sinh động. Khi kiến thức trở nên thú vị và có sự liên kết, việc ghi nhớ sẽ dễ dàng hơn rất nhiều.
+                    </p>
+                </div>
+
+                <!-- Lesson 2 -->
+                <div class="p-7 rounded-2xl bg-white border border-slate-200 shadow-soft hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">2. Ứng Dụng Sơ Đồ Tư Duy (Mindmap)</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Thay vì ghi chép hàng loạt dòng chữ, chúng ta có thể bắt đầu từ một ý chính rồi phát triển thành các nhánh nhỏ. Cách làm này giúp kiến thức được sắp xếp rõ ràng và vô cùng tiện lợi khi nhìn lại ôn tập.
+                    </p>
+                </div>
+
+                <!-- Lesson 3 -->
+                <div class="p-7 rounded-2xl bg-white border border-slate-200 shadow-soft hover:-translate-y-1 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl font-bold mb-5">
+                        <i class="fa-solid fa-flag"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">3. Tầm Quan Trọng Của Mục Tiêu</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Nếu không biết mình muốn đạt được điều gì, việc học rất dễ trở nên nhàm chán và thiếu động lực. Khi có một mục tiêu cụ thể, chúng ta sẽ biết mình cần làm gì và có thêm lý do để cố gắng mỗi ngày.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CẢM NHẬN & ĐÁNH GIÁ CÁ NHÂN -->
+    <section id="cam-nhan" class="py-20 bg-sky-50/50 border-t border-slate-200/80">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Cảm Nhận & Rút Ra Cho Bản Thân</h3>
+                        <p class="text-xs text-slate-500">Góc nhìn chân thực sau khi đọc xong cuốn sách</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-6">
+                    <p class="bg-slate-50 p-4 rounded-xl border-l-4 border-amber-400">
+                        <strong>Điều em thích ở cuốn sách:</strong> Tác giả không chỉ nói rằng <em>“hãy cố gắng hơn”</em>, mà còn đưa ra những <strong>phương pháp cụ thể</strong> để người đọc có thể thử áp dụng.
+                    </p>
+                    <p>
+                        Tuy nhiên, không phải phương pháp nào trong sách cũng phù hợp hoàn toàn với tất cả mọi người. Điều quan trọng là mỗi chúng ta nên lựa chọn những cách học phù hợp với bản thân và kiên trì luyện tập.
+                    </p>
+                    <p class="font-medium text-slate-900 bg-sky-50/80 p-4 rounded-xl">
+                        Sau khi đọc và tìm hiểu, em nhận ra rằng học giỏi không chỉ phụ thuộc vào việc chúng ta có thông minh hay không. <span class="text-sky-700 font-bold">Phương pháp học, thái độ, mục tiêu và sự kiên trì</span> đóng vai trò rất quan trọng. Một người có thể chưa giỏi hôm nay nhưng hoàn toàn có thể tiến bộ nếu biết mình cần cải thiện điều gì và bắt đầu hành động.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: THÔNG ĐIỆP & LỜI KẾT (QUOTE & CONCLUSION) -->
+    <section id="thong-diep" class="py-20 bg-gradient-to-b from-white to-sky-50">
+        <div class="max-w-3xl mx-auto px-4 text-center space-y-8">
+            
+            <div class="inline-block p-3 rounded-full bg-amber-100 text-amber-700 text-2xl mb-2">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+
+            <h2 class="text-2xl sm:text-3xl font-extrabold font-heading text-brand-navy leading-snug">
+                "Đừng vội cho rằng mình không thể. Hãy cho bản thân một cơ hội để thử, để học hỏi và để tiến bộ."
+            </h2>
+
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Nếu các bạn đang cảm thấy việc học khó khăn, thiếu động lực hoặc chưa tìm được phương pháp học phù hợp, em nghĩ <strong>“Tôi Tài Giỏi, Bạn Cũng Thế!”</strong> là một cuốn sách rất đáng để tìm hiểu.
+            </p>
+
+            <div class="p-6 bg-white rounded-2xl border border-sky-200/80 shadow-md text-slate-700 text-sm italic">
+                "Có thể sau khi đọc, chúng ta sẽ không lập tức trở thành một người học xuất sắc, nhưng chúng ta có thể tìm được những cách mới để hiểu bản thân và cải thiện việc học của mình."
+            </div>
+
+            <!-- Closing Gratitude -->
+            <div class="pt-6 border-t border-slate-200">
+                <p class="text-sky-800 font-bold text-base sm:text-lg">
+                    Em xin cảm ơn thầy cô và các bạn đã lắng nghe!
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-900 text-slate-400 text-xs text-center border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <p class="font-semibold text-slate-300">Bài Giới Thiệu Sách: Tôi Tài Giỏi, Bạn Cũng Thế! - Adam Khoo</p>
+            <p class="mt-2 text-slate-500">&copy; 2026 Designed for Book Presentation Landing Page.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
