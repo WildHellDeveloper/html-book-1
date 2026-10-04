@@ -11,6 +11,7 @@ bac-ho-kinh-yeu/index.html                   ← Bác Hồ kính yêu
 tinh-yeu-cua-me/index.html                   ← Tình yêu bất tận của mẹ
 giao-duc-bien-dao/index.html                 ← Giáo dục về biển – đảo Việt Nam
 hoang-sa-truong-sa-khat-vong-hoa-binh/index.html ← Hoàng Sa, Trường Sa – Khát vọng hòa bình
+lich-su-viet-nam-bang-tranh-nuoc-co-viet/index.html ← Lịch sử Việt Nam bằng tranh
 assets/css/style.css                         ← CSS dùng chung cho mọi trang
 assets/js/main.js                            ← Hiệu ứng cuộn + menu toàn trang
 assets/fonts/                                ← Font tự host (có tiếng Việt), chạy được khi offline
